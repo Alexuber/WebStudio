@@ -1,0 +1,40 @@
+ /**
+    |============================
+    | BASE STYLES
+    |============================
+  */
+  
+  body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+  .features-list__desc {
+    color: var(--title-text-color);
+    letter-spacing: 0.03em;
+    line-height: calc(24 / 14);
+    display: block;
+    font-size: 14px;
+  
+  }
+  
+  /* Button */
+  .button {
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 1.87;
+  
+    border: none;
+  }

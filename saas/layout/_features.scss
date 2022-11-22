@@ -1,0 +1,79 @@
+/**
+    +++++++++++++++++++++++++++++
+    | M - A - I - N
+    +++++++++++++++++++++++++++++
+  */
+  
+
+  
+  /**
+    |============================
+    | Особенности
+    |============================
+  */
+  
+  .features {
+    padding-top: 94px;
+  }
+  
+  .features__title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  
+  .features__title--visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .features-list__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    margin-bottom: 10px;
+    gap: 30px;
+  }
+  
+  .features-list {
+    display: flex;
+  }
+  
+  .features-list__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+    
+    &:not(:last-child) {
+        margin-right: 30px;
+      }
+  }
+  
+  
+  .features-list__img {
+    width: 270px;
+    height: 120px;
+  
+    margin-bottom: 30px;
+  
+    background: var(--secondary-bg-color);
+    border-radius: 4px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
