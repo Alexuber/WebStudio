@@ -9,48 +9,35 @@
   height: 80px;
 }
 
-.logo {
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+.header-container {
+  display: block;
+  @media screen and (min-width:$tablet) {
+    display: flex;
   }
   
-}
-
-.logo--header-dark {
-  color: var(--primary---text-color);
-  padding-top: 24px;
-  margin-right: 93px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo__accent {
-  color: var(--accent-color);
-}
-
-.header-container {
-  display: flex;
 }
 
 /* Header - Site nav */
 
 .nav {
-  display: flex;
+display: flex;
+justify-content: space-between;
+align-content: center;
+
+@media screen and (min-width:$tablet) {
   margin-right: 318px;
+  }
 }
 
 .nav-list {
-  display: flex;
+  display: none;
 
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .nav-list__link {
@@ -135,10 +122,14 @@
 }
 
 .contacts {
-  display: flex;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .contacts__item {
@@ -149,4 +140,3 @@
     margin-right: 0;
   }
 }
-

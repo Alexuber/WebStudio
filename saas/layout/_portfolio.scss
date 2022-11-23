@@ -13,6 +13,11 @@
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width:$mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .portfolio__title--visually-hidden {
@@ -42,11 +47,19 @@
   &:not(:last-child) {
     margin-right: 8px;
   }
+  @media screen and (max-width:$mobile) {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio-list {
   text-align: center;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
+
+  @media screen and (max-width:$mobile) {
+    text-align: left;
+    margin-bottom: 25px;
+  }
 }
 
 .portfolio-selector {

@@ -2,6 +2,10 @@
 
 .subscribe {
   margin-left: 93px;
+  @media screen and (max-width:$mobile) {
+    display: block;
+    margin-left: 0px;
+  }
 }
 
 .subscribe__title {
@@ -14,6 +18,12 @@
 
   margin-top: 12px;
   margin-bottom: 20px;
+
+  @media screen and (max-width:$mobile) {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;    
+   }
 }
 
 .subscribe-form {
@@ -21,6 +31,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width:$mobile) {
+    display: block;
+  }
 }
 
 .subscribe-form__input {
@@ -49,7 +62,12 @@
     padding-bottom: 15px;
     padding-left: 16px;
   }
+  @media screen and (max-width:$mobile) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
+
 
 .subscribe-btn {
   font-weight: 700;
@@ -63,4 +81,9 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  @media screen and (max-width:$mobile) {
+    margin-left: auto;
+    margin-right: auto;    
+   }
 }

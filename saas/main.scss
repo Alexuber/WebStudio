@@ -1,39 +1,35 @@
-
 /* Колір основного тексту #212121 */
 /* вторинний колір тексту #757575 */
 /* білий #FFFFFF */
 /* акцент #2196F3 */
 /* вторинний колір фону #F5F4FA */
 
+@import "./base/normalize";
+@import "./base/reset";
+@import "./utils/variables";
+@import "./utils/placeholder";
 
- @import './base/normalize';
- @import './base/reset';
- @import './utils/variables';
- @import './utils/placeholder';
+@import "./base/common";
 
- @import './base/common';
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/activity";
+@import "./layout/our-team";
+@import "./layout/our-clients";
+@import "./layout/footer";
+@import "./layout/portfolio";
+@import "./layout/examples";
 
- @import './layout/header';
- @import './layout/hero';
- @import './layout/features';
- @import './layout/activity';
- @import './layout/our-team';
- @import './layout/our-clients';
- @import './layout/footer';
- @import './layout/portfolio';
- @import './layout/examples';
- @import './components/modal-form';
- @import './components/subscribe-form';
- 
-  
+@import "./components/modal-form";
+@import "./components/subscribe-form";
+@import "./components/logo";
+@import "./components/social-network";
+@import "./components/footer-contacts-address";
+@import "./components/mobile-menu";
+@import "./components/mobile-menu-btn";
 
-  
-  
-
-  
-  
-  
-  /* Варіант чекбокса із галочкою через перетворення SVG в background-image
+/* Варіант чекбокса із галочкою через перетворення SVG в background-image
   
   .checkbox-input {
     margin-right: 7px;
@@ -56,4 +52,3 @@
     border-color: var(--accent-color);
     background-size: 11px 8px;
   } */
-  

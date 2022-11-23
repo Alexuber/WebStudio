@@ -1,10 +1,23 @@
+// Colors
+
 :root {
-    --primary-text-color: #212121;
-    --title-text-color: #757575;
-    --accent-color: #2196f3;
-    --primary-bg-color: #ffffff;
-    --accent-text-color: #ffffff;
-    --secondary-bg-color: #f5f4fa;
-    --var-icons-fill: #afb1b8;
-    --footer-bg-color: #2f303a;
-  }
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --accent-text-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --var-icons-fill: #afb1b8;
+  --footer-bg-color: #2f303a;
+}
+
+// Fonts
+
+$primaryFont: "Roboto", sans-serif;
+$logoFont: "Raleway", sans-serif;
+
+// Adaptive
+
+$mobile: 479.98px;
+$tablet: 767.98px;
+$desctop: 1199.98px;

@@ -8,12 +8,22 @@
   padding-top: 94px;
   padding-bottom: 94px;
 
+  @media screen and (max-width:$mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;   
+  }
+
   .clients__title {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-align: center;
+
+    @media screen and (max-width:$mobile) {
+      margin-bottom: 30px;
+      font-size: 28px;    
+    }
   }
 }
 
@@ -21,6 +31,11 @@
   display: flex;
   gap: 30px;
   justify-content: center;
+
+  @media screen and (max-width:$mobile) {
+    flex-direction: row;
+    flex-wrap: wrap;    
+  }
 }
 
 .clients-list__link {
@@ -55,4 +70,3 @@
     fill: var(--accent-color);
   }
 }
- 
