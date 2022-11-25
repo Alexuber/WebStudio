@@ -6,7 +6,11 @@
 
 .header {
   border-bottom: 1px solid #ececec;
-  height: 80px;
+
+  @media screen and(min-width:$desctop) {
+    height: 80px;
+    
+  }
 }
 
 .header-container {
@@ -24,8 +28,12 @@ display: flex;
 justify-content: space-between;
 align-content: center;
 
-@media screen and (min-width:$tablet) {
-  margin-right: 318px;
+@media screen and (min-width:$desctop) {
+  margin-right: 96px;
+  }
+@media screen and (min-width:$desctop) {
+  margin-right: 315px;
+  justify-content: start;
   }
 }
 
@@ -37,6 +45,10 @@ align-content: center;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 96px;
+    @media screen and (min-width: $desctop) {
+      margin-right: 0;
+    } 
   }
 }
 
@@ -73,11 +85,11 @@ align-content: center;
   }
 }
 
-.nav-list {
-  &:last-child {
-    margin-right: 0;
-  }
-}
+// .nav-list {
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
 
 .nav-list__link--active {
   &::after {
@@ -100,25 +112,31 @@ align-content: center;
   color: var(--title-text-color);
   display: flex;
   align-items: center;
-  color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   &:hover,
   &:focus {
     color: var(--accent-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  @media screen and (min-width:$desctop) {
+    padding-top: 32px;
+  padding-bottom: 32px;
+  }
 }
 
+
 .contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+
+  @media screen and (min-width:$tablet) {
+    margin-right: 10px;
+  }
 }
 
 .contacts {
@@ -126,17 +144,33 @@ align-content: center;
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    flex-direction: column;
+    margin-top: 21px;
   }
+  @media screen and (min-width:$desctop) {
+flex-direction: row;
+padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;  
+}
 }
 
 .contacts__item {
-  &:first-child {
-    margin-right: 30px;
+  
+  @media screen and (min-width:$tablet) {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+    &:first-child {
+      margin-right: 30px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    @media screen and (min-width:$desctop) {
+      &:first-child {
+        margin-bottom: 0;
+      }
   }
-  &:last-child {
-    margin-right: 0;
-  }
+}
 }

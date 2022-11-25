@@ -5,10 +5,12 @@
   */
 
 .activity {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  @media screen and (max-width: $desctop) {
-    display: none;
+  display: none;
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: block;
   }
 }
 

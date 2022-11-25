@@ -19,7 +19,7 @@
   margin-left: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .menu-toggle {
     display: none;
   }
@@ -36,6 +36,10 @@
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+
+  @media (min-width: $tablet) {
+    display: none;
+    }
   
 }
 
@@ -145,6 +149,4 @@ color: #2196F3;
     padding-right: 0;
     border-right: none;
   }
-}
-.mob-menu-socials__link {
 }

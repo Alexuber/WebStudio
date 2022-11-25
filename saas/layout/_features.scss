@@ -11,7 +11,12 @@
   */
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width:$desctop) {
+    padding-top: 94px;
+  }
+  
 }
 
 .features__title {
@@ -41,54 +46,65 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  text-align: center;
   margin-bottom: 10px;
 
-  @media screen and (max-width: $mobile) {
-    text-align: center;
+  @media screen and (min-width: $desctop) {
+    text-align: left;
   }
 }
 
 .features-list {
-  display: flex;
+  display: block;
 
-  @media screen and (max-width: $mobile) {
-    display: block;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
   }
 }
 
 .features-list__item {
-  display: flex;
-  flex-direction: column;
-  max-width: 270px;
-
+ @media screen and (max-width:$tablet) {
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
+ } 
 
-  @media screen and (max-width: $mobile) {
-    max-width: 100%;
-    &:not(:last-child) {
-      margin-right: 0;
-    }
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+
+  }
+  @media screen and (min-width: $desctop) {
+    flex-basis: calc((100% - 3*30px) / 4);
+  
+
   }
 }
 
 .features-list__img {
-  width: 270px;
   height: 120px;
-
+  width: 100%;
   margin-bottom: 30px;
 
   background: var(--secondary-bg-color);
   border-radius: 4px;
-
-  display: flex;
+display: flex;
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: $mobile) {
-    width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 270px;
   }
 }
 
@@ -100,7 +116,7 @@
   display: block;
   font-size: 14px;
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $tablet) {
     width: 100%;
   }
 }
