@@ -23,10 +23,13 @@
           >
           <button class="mobile-menu-btn menu-toggle js-open-menu">
             <svg class="mobile-menu-btn__icon" width="40" height="40">
-              <use class="mobile-menu-btn__symbol" href="./images/symbol-defs.svg#icon-mobile-menu"></use>
+              <use
+                class="mobile-menu-btn__symbol"
+                href="./images/symbol-defs.svg#icon-mobile-menu"
+              ></use>
             </svg>
           </button>
-  
+
           <ul class="nav-list">
             <li class="nav-list__item">
               <a
@@ -156,10 +159,12 @@
             <li class="activity-list__item">
               <img
                 class="activity-list__img"
-                src="./images/box-1.jpg"
+                srcset="
+                  ./images/activities/activity-01_lrg@1x.jpg 1x,
+                  ./images/activities/activity-01_lrg@2x.jpg 2x
+                "
+                src="./images/activities/activity-01_lrg@1x.jpg"
                 alt="Стіл із комп'ютером"
-                width="370"
-                height="294"
               />
               <div class="activity-list__title">
                 <p class="activity-list__desc">Десктопні додатки</p>
@@ -168,10 +173,12 @@
             <li class="activity-list__item">
               <img
                 class="activity-list__img"
-                src="./images/box-2.jpg"
-                alt="Ноутбук та смартфон"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/activities/activity-02_lrg@1x.jpg 1x,
+                  ./images/activities/activity-02_lrg@2x.jpg 2x
+                "
+                src="./images/activities/activity-02_lrg@1x.jpg"
+                alt="Стіл із комп'ютером"
               />
               <div class="activity-list__title">
                 <p class="activity-list__desc">Мобільні додатки</p>
@@ -180,11 +187,14 @@
             <li class="activity-list__item">
               <img
                 class="activity-list__img"
-                src="./images/box-3.jpg"
-                alt="Планшет із зображенням"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/activities/activity-03_lrg@1x.jpg 1x,
+                  ./images/activities/activity-03_lrg@2x.jpg 2x
+                "
+                src="./images/activities/activity-03_lrg@1x.jpg"
+                alt="Стіл із комп'ютером"
               />
+
               <div class="activity-list__title">
                 <p class="activity-list__desc">Дизайнерські рішення</p>
               </div>
@@ -198,13 +208,34 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/personnel/person-1_lrg@1x.jpg"
-                alt="Зображення чоловіка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/person/lrg/person1_lrg@1x.jpg 1x,
+                    ./images/person/lrg/person1_lrg@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/person/md/person1_md@1x.jpg 1x,
+                    ./images/person/md/person1_md@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/person/sm/person1_sm@1x.jpg 1x,
+                    ./images/person/sm/person1_sm@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/person/sm/person1_sm@1x.jpg"
+                  alt="Зображення чоловіка"
+                />
+              </picture>
+
               <h3 class="team-list__title">Ігор Дем'яненко</h3>
               <p class="team-list__desc" lang="EN">Product Designer</p>
               <ul class="social-network">
@@ -254,13 +285,34 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/personnel/person-2_lrg@1x.jpg"
-                alt="Зображення жінки"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/person/lrg/person2_lrg@1x.jpg 1x,
+                    ./images/person/lrg/person2_lrg@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/person/md/person2_md@1x.jpg 1x,
+                    ./images/person/md/person2_md@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/person/sm/person2_sm@1x.jpg 1x,
+                    ./images/person/sm/person2_sm@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/person/sm/person2_sm@1x.jpg"
+                  alt="Зображення жінки"
+                />
+              </picture>
+
               <h3 class="team-list__title">Ольга Рєпіна</h3>
               <p class="team-list__desc" lang="EN">Frontend Developer</p>
               <ul class="social-network">
@@ -310,13 +362,34 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/personnel/person-3_lrg@1x.jpg"
-                alt="Зображення чоловіка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/person/lrg/person3_lrg@1x.jpg 1x,
+                    ./images/person/lrg/person3_lrg@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/person/md/person3_md@1x.jpg 1x,
+                    ./images/person/md/person3_md@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/person/sm/person3_sm@1x.jpg 1x,
+                    ./images/person/sm/person3_sm@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/person/sm/person3_sm@1x.jpg"
+                  alt="Зображення чоловіка"
+                />
+              </picture>
+
               <h3 class="team-list__title">Микола Тарасов</h3>
               <p class="team-list__desc" lang="EN">Marketing</p>
               <ul class="social-network">
@@ -366,13 +439,34 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/personnel/person-4_lrg@1x.jpg"
-                alt="Зображення чоловіка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/person/lrg/person4_lrg@1x.jpg 1x,
+                    ./images/person/lrg/person4_lrg@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/person/md/person4_md@1x.jpg 1x,
+                    ./images/person/md/person4_md@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/person/sm/person4_sm@1x.jpg 1x,
+                    ./images/person/sm/person4_sm@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/person/sm/person4_sm@1x.jpg"
+                  alt="Зображення чоловіка"
+                />
+              </picture>
+
               <h3 class="team-list__title">Михайло Єрмаков</h3>
               <p class="team-list__desc" lang="EN">UI Designer</p>
               <ul class="social-network">
@@ -506,7 +600,9 @@
               >
               <address class="footer-contacts__adress">
                 м. Київ, пр-т Лесі Українки, 26
-                <a class="footer-contacts__link" href="mailto:info@devstudio.com"
+                <a
+                  class="footer-contacts__link"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
                 <a class="footer-contacts__link" href="tel:+380961111111"
@@ -527,7 +623,7 @@
                     </svg>
                   </a>
                 </li>
-  
+
                 <li class="social-network__list">
                   <a href="" class="social-network__link">
                     <svg class="social-network__icon" width="20" height="20">
@@ -538,7 +634,7 @@
                     </svg>
                   </a>
                 </li>
-  
+
                 <li class="social-network__list">
                   <a href="" class="social-network__link">
                     <svg class="social-network__icon" width="20" height="20">
@@ -549,7 +645,7 @@
                     </svg>
                   </a>
                 </li>
-  
+
                 <li class="social-network__list">
                   <a href="" class="social-network__link">
                     <svg class="social-network__icon" width="20" height="20">
@@ -562,7 +658,6 @@
                 </li>
               </ul>
             </div>
-  
           </div>
           <div class="subscribe">
             <h2 class="subscribe__title">Підпишіться на розсилку</h2>
@@ -571,7 +666,6 @@
               <label class="subscribe-form__name">
                 <input
                   class="subscribe-form__input"
-                  class="label__input"
                   type="email"
                   placeholder="E-mail"
                   name="subscribe_email"
@@ -670,14 +764,25 @@
 
       <div class="mob-wrapper">
         <ul class="mobile-menu">
-          <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu-link">Портфоліо</a></li>
-          <li class="mobile-menu__item"><a href="" class="mobile-menu-link mobile-menu-link--active">Студія</a></li>
-          <li class="mobile-menu__item"><a href="" class="mobile-menu-link">Контакти</a></li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu-link">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu-link mobile-menu-link--active"
+              >Студія</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu-link">Контакти</a>
+          </li>
         </ul>
         <div class="mob-contacts">
           <ul class="mobile-menu-contacts">
             <li class="mobile-menu-contacts__item">
-              <a class="mobile-menu-contacts__link" href="mailto:info@devstudio.com">
+              <a
+                class="mobile-menu-contacts__link"
+                href="mailto:info@devstudio.com"
+              >
                 info@devstudio.com
               </a>
             </li>
