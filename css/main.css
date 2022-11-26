@@ -326,7 +326,6 @@ body {
 .nav-list__link--active::after {
   content: "";
   display: block;
-  width: 100%;
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
@@ -613,7 +612,6 @@ body {
 
 .features-list__img {
   height: 120px;
-  width: 100%;
   margin-bottom: 30px;
   background: var(--secondary-bg-color);
   border-radius: 4px;
@@ -629,7 +627,6 @@ body {
 }
 @media screen and (min-width: 767.98px) {
   .features-list__img {
-    width: 354px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -643,11 +640,6 @@ body {
         flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 1199.98px) {
-  .features-list__img {
-    width: 270px;
-  }
-}
 
 .features-list__desc {
   color: var(--title-text-color);
@@ -655,11 +647,6 @@ body {
   line-height: 1.7142857143;
   display: block;
   font-size: 14px;
-}
-@media screen and (max-width: 767.98px) {
-  .features-list__desc {
-    width: 100%;
-  }
 }
 
 /**
@@ -715,7 +702,6 @@ body {
 }
 
 .activity-list__title {
-  width: 370px;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1210,7 +1196,6 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  width: 100%;
   display: block;
 }
 .examples__link:hover, .examples__link:focus {
