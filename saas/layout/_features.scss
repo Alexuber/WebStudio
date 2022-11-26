@@ -85,7 +85,6 @@
 
 .features-list__img {
   height: 120px;
-  width: 100%;
   margin-bottom: 30px;
 
   background: var(--secondary-bg-color);
@@ -95,16 +94,11 @@ display: flex;
   align-items: center;
 
   @media screen and (min-width: $tablet) {
-    width: 354px;
     display: flex;
     justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
-  }
-
-  @media screen and (min-width: $desctop) {
-    width: 270px;
   }
 }
 
@@ -115,8 +109,4 @@ display: flex;
   line-height: calc(24 / 14);
   display: block;
   font-size: 14px;
-
-  @media screen and (max-width: $tablet) {
-    width: 100%;
-  }
 }

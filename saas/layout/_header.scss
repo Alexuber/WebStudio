@@ -85,17 +85,10 @@ align-content: center;
   }
 }
 
-// .nav-list {
-//   &:last-child {
-//     margin-right: 0;
-//   }
-// }
-
 .nav-list__link--active {
   &::after {
     content: "";
     display: block;
-    width: 100%;
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
