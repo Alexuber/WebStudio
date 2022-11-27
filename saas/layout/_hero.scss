@@ -7,14 +7,16 @@
   text-align: center;
   height: 400px;
   padding: 118px 0;
-
+  
   @media screen and (min-width: $desctop) {
     padding: 200px 0;
   }
 }
 
 .hero--darkened {
-  max-width: 100%;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   height: 400px;
   background: #c4c4c4;
   margin: 0 auto;

@@ -6,7 +6,7 @@
 
 .header {
   border-bottom: 1px solid #ececec;
-
+  height: 80px;
   @media screen and(min-width:$desctop) {
     height: 80px;
     
@@ -90,6 +90,7 @@ align-content: center;
     content: "";
     display: block;
     height: 4px;
+    width: 100%;
     background-color: var(--accent-color);
     border-radius: 2px;
 
@@ -107,7 +108,7 @@ align-content: center;
   align-items: center;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.02em;
 
   &:hover,
@@ -119,6 +120,8 @@ align-content: center;
   @media screen and (min-width:$desctop) {
     padding-top: 32px;
   padding-bottom: 32px;
+  font-size: 14px;
+
   }
 }
 
@@ -138,7 +141,7 @@ align-content: center;
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
-    margin-top: 21px;
+    justify-content: center;
   }
   @media screen and (min-width:$desctop) {
 flex-direction: row;
@@ -154,15 +157,16 @@ padding-left: 0;
     &:first-child {
       margin-bottom: 10px;
     }
-    &:first-child {
-      margin-right: 30px;
-    }
+    
     &:last-child {
       margin-right: 0;
     }
     @media screen and (min-width:$desctop) {
       &:first-child {
         margin-bottom: 0;
+      }
+      &:first-child {
+        margin-right: 30px;
       }
   }
 }

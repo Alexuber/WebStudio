@@ -36,6 +36,7 @@ width: 93%;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
+  padding-top: 40px;
 
   @media screen and (min-width:$mobile) {
     width: 450px;
@@ -92,7 +93,7 @@ width: 93%;
 
   color: var(--primary-text-color);
   display: block;
-  margin: 40px 40px 12px 40px;
+  margin: 0 40px 12px 40px;
 }
 
 .backdrop__form {
@@ -203,13 +204,12 @@ width: 93%;
 }
 
 .checkbox {
-  font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #757575;
+  font-size: 12px;
 
-  padding-left: 15px;
-  padding-right: 12px;
+ 
   margin-bottom: 30px;
 
   display: flex;
@@ -217,6 +217,13 @@ width: 93%;
 
   &:not(.custom-checkbox) {
     user-select: none;
+  }
+
+  @media screen and (min-width:$desctop) {
+    padding-left: 15px;
+    padding-right: 12px;
+    font-size: 14px;
+
   }
 }
 

@@ -12,6 +12,7 @@
 
 .footer__wrapper {
   display: flex;
+  align-items: baseline;
   @media screen and (max-width: $desctop) {
     display: block;
   }
@@ -24,7 +25,8 @@
     padding-left: 76px;
     padding-right: 89px;
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
+    align-items: baseline;
   }
   @media screen and (min-width:$desctop) {
     padding-left: 0px;
@@ -34,7 +36,7 @@
 
 .footer-contacts {
   margin-right: 70px;
-
+  min-width: 231px;
   @media screen and (max-width:$desctop) {
     margin-right: 0;
     text-align: center;
@@ -57,7 +59,6 @@
 
   color: #ffffff;
 
-  margin-top: 12px;
   margin-bottom: 20px;
   
   @media screen and (max-width:$desctop) {

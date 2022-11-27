@@ -15,6 +15,7 @@
   padding-bottom: 60px;
   @media screen and (min-width:$desctop) {
     padding-top: 94px;
+    padding-bottom: 0;
   }
   
 }
@@ -49,7 +50,7 @@
   text-align: center;
   margin-bottom: 10px;
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $tablet) {
     text-align: left;
   }
 }

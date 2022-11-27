@@ -78,7 +78,7 @@
 
 .team-list__img {
   width: 100%;
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $mobile) {
     width: 450px;
 }
 @media screen and (min-width: $tablet) {
