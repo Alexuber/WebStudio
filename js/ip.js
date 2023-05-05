@@ -12,7 +12,7 @@ function showPosition(position) {
     long: position.coords.longitude,
   };
 
-  fetch("http://localhost:3000", {
+  fetch("https://calm-river-45366.herokuapp.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
